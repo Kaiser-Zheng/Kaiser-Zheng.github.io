@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Redirect</title>
+    <script type="text/javascript">
+        // Function to redirect to a random URL
+        function randomRedirect() {
+            // Array of URLs
+            var urls = [
+                'https://www.surveycake.com/s/qX9am',
+                'https://www.surveycake.com/s/k3Ka4',
+                'https://www.surveycake.com/s/X2ZWN',
+                'https://www.surveycake.com/s/29dPK'
+            ];
+
+            // Generate a random number between 0 and 2 (inclusive)
+            var randomIndex = Math.floor(Math.random() * urls.length);
+
+            // Redirect to the randomly chosen URL
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+
+<body onload="randomRedirect();">
+    <!-- Optional: You can put some content here that shows while the redirect is happening -->
+    <p>Redirecting...</p>
+</body>
+
+</html>
